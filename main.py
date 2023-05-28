@@ -26,5 +26,5 @@ for folder in os.listdir("modules"):
     if os.path.exists(os.path.join("modules", folder, "cog.py")):
         bot.load_extension(f"modules.{folder}.cog")
 
-key='OTQ3NjgyNTU2NTU0Mzk1Njk5.GOa0Bd.1AbprG_65F80vxyGDvZn7wZMtUTkx47Ccj_iMA'
+key=#Mention your bot token with quotation marks here
 bot.run(key)
