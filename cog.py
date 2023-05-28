@@ -12,7 +12,7 @@ class APOD(commands.Cog, name="APOD"):
     @commands.command()
     async def apod(self, ctx: commands.Context):
         async with aiohttp.ClientSession() as session:
-            async with session.get("https://api.nasa.gov/planetary/apod?api_key=z4VtSw6jVJcvt1FkXsusOPRpwHLatDWirJFvgY7K") as api:
+            async with session.get("https://api.nasa.gov/planetary/apod?api_key=") as api: #Enter your NASA API Key in this line to get access
                 data=await api.json()
                 apod_title=data["title"]
                 apod_date=data["date"]
