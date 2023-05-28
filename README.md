@@ -1,2 +1,2 @@
-# Space-Bot
+APOD Bot
 A discord bot
